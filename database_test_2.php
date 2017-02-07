@@ -112,7 +112,7 @@
   <div class="nav-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="active">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
       </li>
       <li>
           <a href="database_test_2.php">Customer Info</a>
@@ -172,7 +172,11 @@ for ($j = 0 ; $j < $rows ; ++$j)
 {
   $result->data_seek($j);
   $row = $result->fetch_array(MYSQLI_ASSOC);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 3bf1b404824967f4f915e15caaf908b248b16b88
   echo $row['firstName'] . '<br>';
   echo $row['lastName'] . '<br>';
 	echo $row['address'] . '<br>';
