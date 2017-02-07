@@ -112,7 +112,7 @@
   <div class="nav-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="active">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
       </li>
       <li>
           <a href="database_test_2.php">Customer Info</a>
