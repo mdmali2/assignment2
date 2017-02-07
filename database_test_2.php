@@ -167,37 +167,22 @@ $result = $conn->query($query);
 if (!$result) die($conn->error);
 
 $rows = $result->num_rows;
-echo"<table>";
-echo"<tr>";
-  echo"<th>"'First Name'"</th>";
-  echo"<th>"'Last Name'"</th>";
-  echo"<th>"'Address'"</th>";
-  echo"<th>"'City'"</th>";
-  echo"<th>"'state'"</th>";
-  echo"<th>"'Zip'"</th>";
-  echo"<th>"'Email'"</th>";
-  echo"<th>"'Phone'"</th>";
-
-echo"</tr>";
 
 for ($j = 0 ; $j < $rows ; ++$j)
 {
   $result->data_seek($j);
   $row = $result->fetch_array(MYSQLI_ASSOC);
 
-echo"<tr>";
-  echo "<td>" $row['firstName'] ."</td>";
-  echo "<td>" $row['lastName'] . "</td>";
-	echo "<td>" $row['address'] ."</td>";
-  echo "<td>" $row['city'] . "</td>";
-	echo "<td>" $row['state'] . "</td>";
-	echo "<td>" $row['zip'] . "</td>";
-	echo "<td>" $row['email'] . "</td>";
-	echo "<td>" $row['phone'] . "</td>";
-echo"</tr>";
-
+  echo $row['firstName'] . '<br>';
+  echo $row['lastName'] . '<br>';
+	echo $row['address'] . '<br>';
+  echo $row['city'] . '<br>';
+	echo $row['state'] . '<br>';
+	echo $row['zip'] . '<br>';
+	echo $row['email'] . '<br>';
+	echo $row['phone'] . '<br><br>';
 }
-echo"</table>";
+
 $result->close();
 $conn->close();
 ?>
