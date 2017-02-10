@@ -117,8 +117,6 @@
       <li>
           <a href="database_test_2.php">Customer Info</a>
       </li>
-
-
     </ul>
 
     <ul class="nav navbar-nav pull-right">
@@ -174,7 +172,6 @@ echo"</tr>";
 
 
 $rows = $result->num_rows;
-
 for ($j = 0 ; $j < $rows ; ++$j)
 {
   $result->data_seek($j);
@@ -191,10 +188,10 @@ echo"<tr>";
    echo "<td>" . $row['phone']  . "</td>";
    echo"</tr>";
 //}
- echo"</table>";
+
 
 }
-
+echo"</table>";
 $result->close();
 $conn->close();
 ?>
