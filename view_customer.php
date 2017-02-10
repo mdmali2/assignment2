@@ -40,7 +40,7 @@
         <a href="index.html">Home</a>
       </li>
       <li>
-          <a href="ViewCustomer.php">View</a>
+          <a href="view_customer.php">View</a>
       </li>
 	  <li>
           <a href="customer_add.html">Add</a>
